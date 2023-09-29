@@ -28,9 +28,6 @@ public class MyStack<T> {
     }
 
     public T remove(int index){
-        if(index < 0 || index >= size ){
-            throw new IndexOutOfBoundsException("Incorrect index: index = " + index + ", size = " + size);
-        }
         Object element = data[index];
         System.arraycopy(data, index + 1, data, index, data.length - index - 1);
         size--;

@@ -3,7 +3,7 @@ package ua.goit.mycollection;
 import ua.goit.mycollection.list.MyArrayList;
 import ua.goit.mycollection.list.MyStack;
 import ua.goit.mycollection.map.MyHashMap;
-import ua.goit.mycollection.queue.MyLinkedList;
+import ua.goit.mycollection.list.MyLinkedList;
 import ua.goit.mycollection.queue.MyQueue;
 
 public class MyCollectionTest {
@@ -23,6 +23,7 @@ public class MyCollectionTest {
         System.out.println("list.size() = " + list.size());
         System.out.println("list.remove(3) = " + list.remove(3));
         System.out.println("list.size() = " + list.size());
+        System.out.println("list = " + list);
         list.clear();
         System.out.println("list = " + list);
         System.out.println("list.size() = " + list.size() + "\n");
@@ -31,7 +32,7 @@ public class MyCollectionTest {
         System.out.println("MyLinkedList test\n");
 
         MyLinkedList<String> list1 = new MyLinkedList<>();
-        System.out.println("list.size() = " + list.size());
+        System.out.println("list1.size() = " + list1.size());
         list1.add("Canada");
         list1.add("China");
         list1.add("Pakistan");
@@ -56,8 +57,8 @@ public class MyCollectionTest {
         System.out.println("ls.poll() = " + ls.poll());
         System.out.println("ls.size() = " + ls.size());
         System.out.println("ls = " + ls);
-        System.out.println("ls.size() = " + ls.size());
         System.out.println("ls.peek() = " + ls.peek());
+        System.out.println("ls.size() = " + ls.size());
         ls.clear();
         System.out.println("ls = " + ls);
         System.out.println("ls.size() = " + ls.size() + "\n");

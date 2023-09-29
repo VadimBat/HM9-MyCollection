@@ -1,4 +1,4 @@
-package ua.goit.mycollection.queue;
+package ua.goit.mycollection.list;
 
 public class Node<T>{
     private T value;
